@@ -1,0 +1,53 @@
+{
+	"name": "hit-backend",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"start": "node ./bin/www",
+		"lint": "eslint 'src/**/*.js' --fix",
+		"format": "prettier-eslint 'server/**/*.{js,json}' --write"
+	},
+	"lint-staged": {
+		"**/*.js": [
+			"eslint --fix",
+			"prettier-eslint --write",
+			"git add"
+		]
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"dependencies": {
+		"app-root-path": "^3.0.0",
+		"axios": "^0.20.0",
+		"axios-debug-log": "^0.8.0",
+		"bluebird": "^3.7.2",
+		"compression": "^1.7.4",
+		"cookie-parser": "~1.4.4",
+		"cors": "^2.8.5",
+		"debug": "~2.6.9",
+		"dotenv": "^8.2.0",
+		"express": "~4.16.1",
+		"helmet": "^4.1.1",
+		"morgan": "~1.9.1",
+		"mysql2": "^2.2.5",
+		"rate-limiter-flexible": "^2.1.10",
+		"redis": "^3.0.2",
+		"sequelize": "6.3.4",
+		"sequelize-cli": "^6.2.0",
+		"winston": "^3.3.3",
+		"winston-daily-rotate-file": "^4.5.0"
+	},
+	"devDependencies": {
+		"eslint": "^7.7.0",
+		"eslint-config-airbnb-base": "^14.2.0",
+		"eslint-plugin-import": "^2.22.0",
+		"eslint-plugin-promise": "^4.2.1",
+		"eslint-plugin-security": "^1.4.0",
+		"husky": "^4.2.5",
+		"lint-staged": "^10.2.13",
+		"prettier-eslint-cli": "^5.0.0"
+	}
+}

@@ -1,0 +1,21 @@
+# Logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules
+
+# Optional npm cache directory
+.npm
+temp
+
+# Optional REPL history
+.node_repl_history
+*.sql
+.idea
+.vscode
+logs/*
+cache
+*.txt
+.env
+*.aof

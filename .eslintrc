@@ -1,0 +1,16 @@
+{
+  "env": {
+    "node": true
+  },
+  "extends": "airbnb-base",
+  "plugins": ["promise"],
+  "rules": {
+    "max-len": "off",
+    "consistent-return": "warn",
+    "no-unused-vars": "warn",
+    "no-shadow": "warn",
+    "no-else-return": "off",
+    "no-undef": "warn",
+    "indent": ["error", 4]
+  }
+}
