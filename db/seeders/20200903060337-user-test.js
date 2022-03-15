@@ -4,8 +4,11 @@ module.exports = {
             'users',
             [
                 {
-                    name: 'test',
+                    firstName: 'test',
+                    lastName: 'test',
                     email: 'test@test.com',
+                    createdAt: new Date(),
+                    updatedAt: new Date()
                 },
             ],
             {},

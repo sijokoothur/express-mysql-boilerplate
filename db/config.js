@@ -7,4 +7,6 @@ module.exports = {
     host: config.DB.HOST,
     dialect: config.DB.DIALECT,
     port: config.DB.PORT,
+    "seederStorage": "sequelize",
+    "seederStorageTableName": "sequelize_data"
 };
